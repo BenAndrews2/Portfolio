@@ -12,7 +12,15 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  
+  header backimage {
+    background : url("Images/backgroundmountain.jpg");
+    width: auto; /* Adjust the width as needed */
+    height: 100vh; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is on its own line */
+    margin-left: 0px; /* Adjust margins for positioning */
+    margin-bottom: 0px;
+
+  }
   nav ul {
     list-style: none;
     padding: 0;
