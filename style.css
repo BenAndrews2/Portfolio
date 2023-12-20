@@ -1,62 +1,107 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header backimage {
-    background : url("Images/backgroundmountain.jpg");
-    width: auto; /* Adjust the width as needed */
-    height: 100vh; /* Maintain aspect ratio */
-    display: block; /* Ensure the image is on its own line */
-    margin-left: 0px; /* Adjust margins for positioning */
-    margin-bottom: 0px;
+  font-family: Georgia, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+}
 
-  }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
   
-  nav ul li {
-    display: inline;
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  section#about {
-    background-color: #f9f9f9;
-  }
-  
-  section#projects {
-    background-color: #e0e0e0;
-  }
-  
-  section#contact {
-    background-color: #f0f0f0;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
-  
+}
+
+header p {
+  font-size: 1em;
+  margin: 0;
+}
+
+header s {
+  font-size: 1.45em;
+  margin: 0;
+}
+header backimage {
+  width: auto;
+  height: 100vh;
+  display: block;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+section#about {
+  background-color: #e0e0e0;
+}
+
+section#projects {
+  background-color: #e0e0e0;
+}
+
+section#education {
+  background-color: #ac9898;
+}
+
+section#skills {
+  background-color: #ac9898;
+}
+section#scholarships {
+  background-color: #ac9898;
+}
+section#work-experience {
+  background-color: #e0e0e0;
+}
+
+section#contact {
+  background-color: #ac9898;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
