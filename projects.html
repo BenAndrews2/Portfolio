@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Optional: Add some CSS styling to control image size and spacing */
-        .image-container {
-            display: flex;
-        }
-
-        .image-container img {
-            width: 250px; /* Adjust the width as needed */
-            margin-right: 10px; /* Adjust the margin as needed */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ben Andrews – Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .image-container img {
+      width: 250px;
+    }
+  </style>
 </head>
 
 <body>
 <header>
-    <section class="backimage" id="Projects"></section></header>
-  <header>
-    <h1>Projects</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resumé</a></li>
-      </ul>
-    </nav>
+  <h1>Projects</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resumé</a></li>
+    </ul>
+  </nav>
 </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <h3>Project 1: MUNFridgeGUI</h3>
-        <p>Duration: Three Months<br>Technologies Used: Node.js, HTML, CSS, JavaScript, TypeScript, Docker</p>
-        <p>
-            ● Designing the GUI for a smart fridge application.<br>
-            ● Working with a group of 4 for the GUI and 21 people for the overall application.<br>
-            ● Utilizing Node.js to develop a 3-D render of a smart fridge with UI capabilities.<br>
-            ● This allows the user to store the groceries in the refrigerator and keep track of items as well as all information stored by the user.<br>
-            ● Utilizing Docker Containers, we were able to communicate with the other teams which included: Messaging Team, Database Team, ALgorithms Team
-            </p>
-            <div class="image-container">
-              <img src="assets/MUNFridgeGUI_1.png" alt="First Image">
-              <img src="assets/MUNFridgeGUI_2.png" alt="Second Image">
-          </div>
-      </li>
-      <li>
-        <h3>Project 2: Teleportal</h3>
-        <p>Duration: Two Months<br>Technologies Used: Unity Game Engine, Visual Studio, C#</p>
-        <p>
-            ● Developed a game using the Unity Game Engine.<br>
-            ● The Portal videogame franchise influenced the game, which has a portal gun allowing
-            users to travel around the level.<br>
-            ● Designed different levels with puzzles that rely on strategic problem-solving skills.<br></p>
-            <div class="image-container">
-              <img src="assets/Teleportal_Screenshot2.png" alt="First Image">
-              <img src="assets/Teleportal_Screenshot1.png" alt="Second Image">
-              <img src="assets/Teleportal_Screenshot_3.png" alt="Third Image">
-          </div>
-      </li>
-      <li>
-        <h3>Project 3: E-commerce Console</h3>
-        <p>Duration: Two Months<br>Technologies Used: Visual Studio, C++</p>
-        <p>
-            ● Developed a visual studio project which allowed the user to enter data through the console.<br>
-            ● The user could add items, price, quantity, and category of item to help track their items.<br>
-            ● They could also put in information for different users if another user wanted to make their
-            list.<br>
-            ● This project allowed the user to check the prices of the items and sort them with the
-            lowest price, category, or quantity.
-            </p>
-            <div class="image-container">
-              <img src="assets/E-Commerce_Screenshot_1.PNG" alt="First Image">
-              <img src="assets/E-Commerce_Screenshot_2.PNG" alt="Second Image">
-          </div>
-      </li>
-    </ul>
-  </section>
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <ul>
 
-  <footer>
-    <p>&copy; 2024 Ben Andrews</p>
-  </footer>
+    <li>
+      <h3>FitLens – Smart Workout Assistant</h3>
+      <p><strong>Duration:</strong> 8 months<br>
+         <strong>Technologies:</strong> TypeScript, JavaScript, CSS, Flask, React, Electron</p>
+      <p>
+        Built a desktop app to analyze squat form using body tracking and joint angle estimation. Provided real-time visual and audio feedback to help users improve exercise technique. Included historical review of workout sessions and Firestore integration.
+      </p>
+    </li>
+
+    <li>
+      <h3>Time Series Labeling UI</h3>
+      <p><strong>Duration:</strong> 4 months<br>
+         <strong>Technologies:</strong> Python, JavaScript, Azure Storage, HTML, CSS</p>
+      <p>
+        Developed a tool for annotating gas compressor sensor data in collaboration with ExxonMobil. Allowed domain experts to manually label anomalies in time series plots, store annotations in Azure, and interface with anomaly detection models.
+      </p>
+    </li>
+
+    <li>
+      <h3>MUNFridgeGUI</h3>
+      <p><strong>Duration:</strong> 3 months<br>
+         <strong>Technologies:</strong> Node.js, HTML, CSS, JavaScript, Docker</p>
+      <p>
+        Designed a 3D GUI for a smart fridge system as part of a 20+ person team. Enabled item tracking, food expiration warnings, and inventory management. Dockerized to interface with other modules like messaging and database services.
+      </p>
+      <div class="image-container">
+        <img src="assets/MUNFridgeGUI_1.png" alt="Smart Fridge GUI 1" />
+        <img src="assets/MUNFridgeGUI_2.png" alt="Smart Fridge GUI 2" />
+      </div>
+    </li>
+
+    <li>
+      <h3>Teleportal</h3>
+      <p><strong>Duration:</strong> 2 months<br>
+         <strong>Technologies:</strong> Unity, Visual Studio, C#</p>
+      <p>
+        First-person puzzle game inspired by Portal, featuring custom physics-based portal mechanics. Designed and developed multiple challenge levels that require problem-solving to advance.
+      </p>
+      <div class="image-container">
+        <img src="assets/Teleportal_Screenshot2.png" alt="Teleportal Screenshot 2" />
+        <img src="assets/Teleportal_Screenshot1.png" alt="Teleportal Screenshot 1" />
+        <img src="assets/Teleportal_Screenshot_3.png" alt="Teleportal Screenshot 3" />
+      </div>
+    </li>
+
+    <li>
+      <h3>E-Commerce Console Tool</h3>
+      <p><strong>Duration:</strong> 2 months<br>
+         <strong>Technologies:</strong> C++, Visual Studio</p>
+      <p>
+        Built a console-based item tracking system with price sorting, category filtering, and multi-user support. Designed for easy command-line use and modular item database expansion.
+      </p>
+      <div class="image-container">
+        <img src="assets/E-Commerce_Screenshot_1.PNG" alt="E-Commerce Screenshot 1" />
+        <img src="assets/E-Commerce_Screenshot_2.PNG" alt="E-Commerce Screenshot 2" />
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ben Andrews</p>
+</footer>
+
 </body>
 </html>
