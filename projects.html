@@ -35,10 +35,15 @@
     <li>
       <h3>FitLens – Smart Workout Assistant</h3>
       <p><strong>Duration:</strong> 8 months<br>
-         <strong>Technologies:</strong> TypeScript, JavaScript, CSS, Flask, React, Electron</p>
+         <strong>Technologies:</strong> TypeScript, JavaScript, CSS, Flask, React, Electron, Firebase</p>
       <p>
         Built a desktop app to analyze squat form using body tracking and joint angle estimation. Provided real-time visual and audio feedback to help users improve exercise technique. Included historical review of workout sessions and Firestore integration.
       </p>
+      <div class="slider" id="fitlens-slider">
+        <img id="fitlens-image" src="assets/FitLens1.png" alt="FitLens Screenshot">
+        <button class="slider-btn left" onclick="prevImage('fitlens')">&#10094;</button>
+        <button class="slider-btn right" onclick="nextImage('fitlens')">&#10095;</button>
+      </div>
     </li>
 
     <li>
@@ -95,7 +100,12 @@
 
 <footer>
   <p>&copy; 2025 Ben Andrews</p>
+      <div id="socialIcons">
+        <a href="https://www.linkedin.com/in/ben-andrews-a95086266" target="_blank">
+          <img src="assets/linkedin-icon.png" alt="LinkedIn" width="30" height="30" />
+        </a>
+      </div>
 </footer>
-
+<script src="slider.js"></script>
 </body>
 </html>
